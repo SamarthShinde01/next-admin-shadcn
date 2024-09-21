@@ -9,6 +9,7 @@ import {
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
+import { ThemeToggler } from "./ThemeToggler";
 
 export const Navbar = () => {
 	return (
@@ -20,23 +21,26 @@ export const Navbar = () => {
 				</Avatar> */}
 			</Link>
 
-			<DropdownMenu>
-				<DropdownMenuTrigger className="focus:outline-none">
-					<Avatar>
-						<AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-						<AvatarFallback className="text-black">BT</AvatarFallback>
-					</Avatar>
-				</DropdownMenuTrigger>
-				<DropdownMenuContent>
-					<DropdownMenuSeparator />
-					<DropdownMenuItem>
-						<Link href="/profile">Profile</Link>
-					</DropdownMenuItem>
-					<DropdownMenuItem>
-						<Link href="/logout">Logout</Link>
-					</DropdownMenuItem>
-				</DropdownMenuContent>
-			</DropdownMenu>
+			<div className="flex items-center">
+				<ThemeToggler />
+				<DropdownMenu>
+					<DropdownMenuTrigger className="focus:outline-none">
+						<Avatar>
+							<AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+							<AvatarFallback className="text-black">BT</AvatarFallback>
+						</Avatar>
+					</DropdownMenuTrigger>
+					<DropdownMenuContent>
+						<DropdownMenuSeparator />
+						<DropdownMenuItem>
+							<Link href="/profile">Profile</Link>
+						</DropdownMenuItem>
+						<DropdownMenuItem>
+							<Link href="/logout">Logout</Link>
+						</DropdownMenuItem>
+					</DropdownMenuContent>
+				</DropdownMenu>
+			</div>
 		</div>
 	);
 };
