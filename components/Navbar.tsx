@@ -36,7 +36,7 @@ export const Navbar = () => {
 							<Link href="/profile">Profile</Link>
 						</DropdownMenuItem>
 						<DropdownMenuItem>
-							<Link href="/logout">Logout</Link>
+							<Link href="/auth">Logout</Link>
 						</DropdownMenuItem>
 					</DropdownMenuContent>
 				</DropdownMenu>
