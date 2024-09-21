@@ -33,8 +33,9 @@ export const PostsTable = ({ limit, title }: PostsTableProps) => {
 				<TableCaption>A list of recent posts</TableCaption>
 				<TableHeader>
 					<TableRow>
-						<TableHead>Title</TableHead>
 						<TableHead className="hidden md:table-cell">#</TableHead>
+						<TableHead>Title</TableHead>
+
 						<TableHead className="hidden md:table-cell">Author</TableHead>
 						<TableHead className="hidden md:table-cell ">Date</TableHead>
 						<TableHead className="hidden md:table-cell">View</TableHead>
