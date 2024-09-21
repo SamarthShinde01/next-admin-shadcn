@@ -31,20 +31,16 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="lite"
-					enableSystem={true}
-					storageKey="dashboard-theme"
-				>
-					<Navbar />
-					<div className="flex">
-						<div className="hidden md:block h-[100vh] w-[300px ]">
-							<Sidebar />
-						</div>
-						<div className="p-5 w-full md:max-w-[1140px]"> {children}</div>
-					</div>
-				</ThemeProvider>
+				{
+					<ThemeProvider
+						attribute="class"
+						defaultTheme="lite"
+						enableSystem={true}
+						storageKey="dashboard-theme"
+					>
+						{children}
+					</ThemeProvider>
+				}
 			</body>
 		</html>
 	);
