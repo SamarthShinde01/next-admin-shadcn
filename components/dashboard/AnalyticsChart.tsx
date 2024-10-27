@@ -27,9 +27,9 @@ export const AnalyticsChart = () => {
 					<CardDescription>Views Per Month</CardDescription>
 				</CardHeader>
 				<CardContent>
-					<div style={{ width: "100%", height: 300 }}>
+					<div style={{ width: "100%", height: 400 }}>
 						<ResponsiveContainer>
-							<LineChart width={1100} height={300} data={data}>
+							<LineChart width={1100} height={400} data={data}>
 								<Line type="monotone" dataKey="uv" stroke="#888" />
 								<CartesianGrid stroke="#ccc" />
 								<XAxis dataKey="name" />

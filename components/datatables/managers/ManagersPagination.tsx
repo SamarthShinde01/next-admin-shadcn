@@ -8,7 +8,7 @@ import {
 	PaginationPrevious,
 } from "@/components/ui/pagination";
 
-export const PostsPagination = () => {
+export const ManagersPagination = () => {
 	return (
 		<Pagination>
 			<PaginationContent>

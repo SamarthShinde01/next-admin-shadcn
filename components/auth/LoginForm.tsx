@@ -48,7 +48,7 @@ const LoginForm = () => {
 	});
 
 	const handleSubmit = (data: z.infer<typeof formSchema>) => {
-		router.push("/");
+		router.push("/admin");
 	};
 
 	return (

@@ -2,7 +2,6 @@ import {
 	Table,
 	TableHeader,
 	TableBody,
-	TableFooter,
 	TableHead,
 	TableRow,
 	TableCell,
@@ -12,12 +11,12 @@ import Link from "next/link";
 import posts from "@/data/posts";
 import { Post } from "@/types/posts";
 
-interface PostsTableProps {
+interface DatasetTableProps {
 	limit?: number;
 	title?: string;
 }
 
-export const PostsTable = ({ limit, title }: PostsTableProps) => {
+export const DatasetTable = ({ limit, title }: DatasetTableProps) => {
 	//sort post in desc order based on date
 	const sortedPosts: Post[] = [...posts].sort(
 		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
